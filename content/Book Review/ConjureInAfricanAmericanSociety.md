@@ -9,9 +9,9 @@ draft = false
 
 +++
 
-![Conjure Image](/example/FeaturedImage.jpg)
+![Conjure Image](example/FeaturedImage.jpg)
 
-I recently read Conjure in African American Society by Jeffrey E. Anderson, a book that feels particularly timely given ongoing cultural discussions. The work traces the history of conjure in the United States—examining its origins, regional variations, cultural influences, and enduring legacy, while also considering its relevance today.
+I recently read [Conjure in African American Society](https://amzn.to/4dFkGIb "Conjure in African American Society") by Jeffrey E. Anderson, a book that feels particularly timely given ongoing cultural discussions. The work traces the history of conjure in the United States—examining its origins, regional variations, cultural influences, and enduring legacy, while also considering its relevance today.
 
 One reason I picked up this book was to better understand how Louisiana became widely regarded as the epicenter of Black American spiritual folk belief. This perception is often echoed in broader conversations about African American cultural identity, including debates within the diaspora. One sentiment that occasionally arises in these discussions is the claim that
  
@@ -27,7 +27,7 @@ Immigration patterns also played a crucial role in the regional development of H
 
 Transfer to the Deep South was widely regarded as a severe punishment for Black Americans with established roots in other parts of the United States. This harsh reality is underscored by recorded instances of enslaved people in Virginia taking their own lives upon being sold to Deep South plantations, where conditions were notoriously harsher and family separations more frequent. Notably, in the wake of slave uprisings and perceived insubordination, some judges opted to send serious Black offenders to the Deep South rather than impose a death sentence. This practice both reinforced the terror of sale and further disrupted Black families and communities.
 
-For those interested in exploring this history further, I highly recommend The 272 by Rachel L. Swarns. Swarns highlights cases where enslaved individuals were sentenced to the Deep South, underscoring the profound fear and despair many experienced at the prospect of being uprooted and subjected to even harsher conditions.
+For those interested in exploring this history further, I highly recommend [The 272](https://amzn.to/4dEENGl "The 272") by Rachel L. Swarns. Swarns highlights cases where enslaved individuals were sentenced to the Deep South, underscoring the profound fear and despair many experienced at the prospect of being uprooted and subjected to even harsher conditions.
 
 It’s worth noting that many European settlers preferred to avoid the extremely hot and humid regions of the Americas, which created unique conditions for Black Americans to preserve and adapt their cultural traditions with relatively less interference compared to areas with denser European populations. As a result, regional differences shaped distinct variations in Hoodoo practices across the South until the mid-20th century. In areas with stronger Catholic influence, for example, syncretism allowed African spiritual traditions to endure more visibly—often through the incorporation of saints as representations of African deities.
 
