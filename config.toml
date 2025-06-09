@@ -2,7 +2,6 @@
 [module.hugoVersion]
 min = "0.100.0"
 
-baseURL = "/WhiteRabbitDandy/"
 languageCode = "en-us"
 title = "WhiteRabbitDandy"
 theme = "WhiteRabbitDandy"
