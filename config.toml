@@ -2,6 +2,7 @@
 [module.hugoVersion]
 min = "0.100.0"
 
+baseURL = "/WhiteRabbitDandy/"
 languageCode = "en-us"
 title = "WhiteRabbitDandy"
 theme = "WhiteRabbitDandy"
@@ -47,6 +48,15 @@ defaultContentLanguage = "en"
   # Comments
   [params.comments]
     enable = true
+
+  # Categories to ignore
+  [params.ignore]
+    categories = []
+
+  # Banner showcase configuration
+  [params.bannershowcase]
+    categories = ["BookReview"]
+    limit = 2
 
 # Server configuration
 [server]
