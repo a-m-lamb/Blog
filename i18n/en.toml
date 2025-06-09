@@ -1,0 +1,80 @@
+[sitename]
+other = "WhiteRabbitDandy"
+
+[siteslogan]
+other = "Where vintage charm meets literary musings"
+
+[siteseokeywords]
+other = "vintage lifestyle, book reviews, literary analysis, classic literature, vintage fashion, historical books, book recommendations"
+
+[siteseodescription]
+other = "A curated space for vintage lifestyle enthusiasts and book lovers, featuring thoughtful book reviews, literary analysis, and timeless living inspiration."
+
+[search]
+other = "Search"
+
+[searchplaceholder]
+other = "Search books, reviews, or topics..."
+
+[searching]
+other = "Searching the library..."
+
+[keywordmissing]
+other = "Please enter a title, author, or topic to search."
+
+[nomatch]
+other = "No matches found in our collection"
+
+[home]
+other = "Home"
+
+[next]
+other = "Next Chapter >>"
+
+[previous]
+other = "<< Previous Chapter"
+
+[recommendpost]
+other = "Recommended Reads"
+
+[intro]
+other = "About the Blog"
+
+[topost]
+other = "Latest Reviews"
+
+[topcat]
+other = "Book Categories"
+
+[toptag]
+other = "Popular Topics"
+
+[archive]
+other = "Reading Archive"
+
+[contact]
+other = "Get in Touch"
+
+[emptypost]
+other = "No Reviews Yet"
+
+[emptycat]
+other = "No Categories"
+
+[emptytag]
+other = "No Tags"
+
+[emptyarchive]
+other = "No Archives"
+
+[missing404title]
+other = "Page Not Found"
+
+[missing404body]
+other = "Alas, this page seems to have wandered down the rabbit hole. Let's find our way back home."
+
+[articlelink]
+other = "Read More"
+
+[archivefmt]
+other = "January 2006"

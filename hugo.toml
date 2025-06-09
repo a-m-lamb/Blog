@@ -1,0 +1,38 @@
+baseURL = "/"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+staticDir = ["static"]
+
+[languages]
+	[languages.en]
+		languageCode = "en-us"
+		contentDir = "content"
+		weight = 1
+		[[languages.en.menus.main]]
+			name = 'Home'
+			pageRef = '/'
+			weight = 1
+		[[languages.en.menus.main]]
+			name = 'Categories'
+			pageRef = '/categories'
+			weight = 2
+		[[languages.en.menus.main]]
+			name = 'Tags'
+			pageRef = '/tags'
+			weight = 3
+
+[params]
+[params.bannershowcase]
+	categories = ["Development", "BookReview"]
+	limit = 2
+[params.ignore]
+	categories = ["privacy", "terms", "archives", "cookie"]
+[params.license]
+	copyright = "© 2025 All Rights Reserved."
+
+[params.google]
+	ga4 = "G-XXXXXXXXXX"  # Replace with your GA4 Measurement ID
+
+[outputs]
+  home = ["HTML", "JSON"]   # Optional - JSON just for search 
