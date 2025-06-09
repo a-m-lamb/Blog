@@ -2,13 +2,54 @@
 [module.hugoVersion]
 min = "0.100.0"
 
-baseURL = "/Blog/"
+baseURL = "/WhiteRabbitDandy/"
 languageCode = "en-us"
-title = "Your Site Title"
+title = "WhiteRabbitDandy"
+theme = "WhiteRabbitDandy"
 
+# Enable features
+enableGitInfo = true
+enableEmoji = true
+enableRobotsTXT = true
+
+# Default language
+defaultContentLanguage = "en"
+
+# Menu configuration
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+# Site parameters
 [params]
-  # Your site parameters here
+  # Site description
+  description = "Your site description"
+  
+  # Author information
+  author = "Your Name"
+  
+  # Social media links
+  [params.social]
+    github = "https://github.com/yourusername"
+    twitter = "https://twitter.com/yourusername"
+    
+  # Search configuration
+  [params.search]
+    enable = true
+    
+  # Comments
+  [params.comments]
+    enable = true
 
+# Server configuration
 [server]
   [[server.headers]]
     for = "/**"
@@ -18,11 +59,13 @@ title = "Your Site Title"
       X-XSS-Protection = "1; mode=block"
       Referrer-Policy = "strict-origin-when-cross-origin"
 
+# Image processing
 [imaging]
   resampleFilter = "lanczos"
   quality = 75
   anchor = "smart"
 
+# Static files
 [static]
   # Ensure static files are copied to the output directory
   copy = true
