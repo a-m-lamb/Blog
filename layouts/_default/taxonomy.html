@@ -13,7 +13,7 @@
         {{ partial "banner.html" . }}
         <div class="home">
             <div class="logo">
-                <h1><a href="/">{{.Title}}</a></h1>
+                <h1><a href="{{ .Site.BaseURL }}">{{.Title}}</a></h1>
             </div>
             {{ partial "nav.html" . }}
             <div>
