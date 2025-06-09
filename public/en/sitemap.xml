@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/en/</loc>
+    <loc>http://localhost:1313/WhiteRabbitDandy/en/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/book-review/</loc>
+    <loc>http://localhost:1313/WhiteRabbitDandy/en/book-review/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/bookreview/</loc>
+    <loc>http://localhost:1313/WhiteRabbitDandy/en/categories/bookreview/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/tags/bookreview/</loc>
+    <loc>http://localhost:1313/WhiteRabbitDandy/en/tags/bookreview/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/</loc>
+    <loc>http://localhost:1313/WhiteRabbitDandy/en/categories/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/book-review/conjureinafricanamericansociety/</loc>
+    <loc>http://localhost:1313/WhiteRabbitDandy/en/book-review/conjureinafricanamericansociety/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/categories/history/</loc>
+    <loc>http://localhost:1313/WhiteRabbitDandy/en/categories/history/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/tags/history/</loc>
+    <loc>http://localhost:1313/WhiteRabbitDandy/en/tags/history/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/tags/</loc>
+    <loc>http://localhost:1313/WhiteRabbitDandy/en/tags/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url>
 </urlset>

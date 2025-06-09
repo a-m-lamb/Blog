@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BookReview on </title>
-    <link>//localhost:1313/en/categories/bookreview/</link>
+    <link>http://localhost:1313/WhiteRabbitDandy/en/categories/bookreview/</link>
     <description>Recent content in BookReview on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 08 Jan 2025 09:32:11 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/en/categories/bookreview/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/WhiteRabbitDandy/en/categories/bookreview/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploring the Evolution of Hoodoo: “Conjure in African American Society” Book Review</title>
-      <link>//localhost:1313/en/book-review/conjureinafricanamericansociety/</link>
+      <link>http://localhost:1313/WhiteRabbitDandy/en/book-review/conjureinafricanamericansociety/</link>
       <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
-      <guid>//localhost:1313/en/book-review/conjureinafricanamericansociety/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;//localhost:1313/example/FeaturedImage.jpg&#34; alt=&#34;Conjure Image&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I recently read Conjure in African American Society by Jeffrey E. Anderson, a book that feels particularly timely given ongoing cultural discussions. The work traces the history of conjure in the United States—examining its origins, regional variations, cultural influences, and enduring legacy, while also considering its relevance today.&lt;/p&gt;&#xA;&lt;p&gt;One reason I picked up this book was to better understand how Louisiana became widely regarded as the epicenter of Black American spiritual folk belief. This perception is often echoed in broader conversations about African American cultural identity, including debates within the diaspora. One sentiment that occasionally arises in these discussions is the claim that&lt;/p&gt;</description>
+      <guid>http://localhost:1313/WhiteRabbitDandy/en/book-review/conjureinafricanamericansociety/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/WhiteRabbitDandy/example/FeaturedImage.jpg&#34; alt=&#34;Conjure Image&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I recently read Conjure in African American Society by Jeffrey E. Anderson, a book that feels particularly timely given ongoing cultural discussions. The work traces the history of conjure in the United States—examining its origins, regional variations, cultural influences, and enduring legacy, while also considering its relevance today.&lt;/p&gt;&#xA;&lt;p&gt;One reason I picked up this book was to better understand how Louisiana became widely regarded as the epicenter of Black American spiritual folk belief. This perception is often echoed in broader conversations about African American cultural identity, including debates within the diaspora. One sentiment that occasionally arises in these discussions is the claim that&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
