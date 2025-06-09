@@ -2,3 +2,12 @@
 .DS_Store
 # Tailwind CSS
 node_modules
+
+# Hugo default output directory
+/public/
+/resources/
+.hugo_build.lock
+
+# Deploy keys
+deploy_key
+deploy_key.pub
