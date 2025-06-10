@@ -9,6 +9,7 @@ draft = false
 
 +++
 
+![Conjure Image](example/FeaturedImage.jpg)
 
 I recently read [Conjure in African American Society](https://amzn.to/4dFkGIb "Conjure in African American Society") by Jeffrey E. Anderson, a book that feels particularly timely given ongoing cultural discussions. The work traces the history of conjure in the United States—examining its origins, regional variations, cultural influences, and enduring legacy, while also considering its relevance today.
 
