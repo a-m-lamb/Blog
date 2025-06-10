@@ -1,30 +1,50 @@
 {{ define "main" }}
 
-<article class="single-article">
+<article class="post-single">
     <!--
 <img src="/img/lemon.webp" alt="" class="w-full h-96 object-cover rounded-lg">
 -->
-    <div class="group relative">
-        <h1 class="text-3xl font-medium leading-10 text-gray-400 hover:text-gray-100">
-            <a href="{{ .RelPermalink }}">
-                {{ .Title }}
-            </a>
-        </h1>
-        <time datetime="2025-03-16" class="flex items-center py-2 text-xl text-gray-600">
-            {{ .PublishDate.Format "2006-01-02 15:04" }}
-            &nbsp;&nbsp;|&nbsp;&nbsp;{{ .ReadingTime }} minute read
-        </time>
-
-        <div class="mt-1 lg:pb-10 px-2 text-2xl leading-10 font-thin text-gray-500 overflow-hidden break-words article-body">
-            {{ $content := .Content }}
-            {{ $content := replace $content "](/BookReview/" (printf "](%sBookReview/" .Site.BaseURL) }}
-            {{ $content := replace $content "](/image/" (printf "](%simage/" .Site.BaseURL) }}
-            {{ $content := replace $content "](/img/" (printf "](%simg/" .Site.BaseURL) }}
-            {{ $content := replace $content "](/static/" (printf "](%sstatic/" .Site.BaseURL) }}
-            {{ $content := replace $content "](example/" (printf "](%sBookReview/ConjureInAfricanAmericanSociety/" .Site.BaseURL) }}
-            {{ $content | safeHTML }}
+    <header class="post-header">
+        <h1 class="post-title">{{ .Title }}</h1>
+        {{ if .Params.description }}
+        <div class="post-description">{{ .Params.description }}</div>
+        {{ end }}
+        <div class="post-meta">
+            {{ if .Date }}
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                {{ .Date.Format "January 2, 2006" }}
+            </time>
+            {{ end }}
+            {{ if .Params.categories }}
+            <span class="post-categories">
+                {{ range .Params.categories }}
+                <a href="{{ "categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                {{ end }}
+            </span>
+            {{ end }}
         </div>
+    </header>
+
+    <div class="post-content">
+        {{ $content := .Content }}
+        {{ $content := replace $content "src=\"/static/" (printf "src=\"%s" .Site.BaseURL) }}
+        {{ $content := replace $content "src=\"example/" (printf "src=\"%sstatic/example/" .Site.BaseURL) }}
+        {{ $content := replace $content "src=\"/example/" (printf "src=\"%sstatic/example/" .Site.BaseURL) }}
+        {{ $content := replace $content "src=\"/BookReview/" (printf "src=\"%sstatic/BookReview/" .Site.BaseURL) }}
+        {{ $content := replace $content "src=\"BookReview/" (printf "src=\"%sstatic/BookReview/" .Site.BaseURL) }}
+        {{ $content | safeHTML }}
     </div>
+
+    {{ if .Params.tags }}
+    <footer class="post-footer">
+        <ul class="post-tags">
+            {{ range .Params.tags }}
+            <li><a href="{{ "tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+            {{ end }}
+        </ul>
+    </footer>
+    {{ end }}
+
     <div class="text-gray-500 text-lg">
         {{ i18n "articlelink" }}:&nbsp;<a href="{{ .Permalink }}"
             class="border-b border-b-gray-500 hover:text-gray-400">{{

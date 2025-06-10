@@ -83,8 +83,31 @@ defaultContentLanguage = "en"
   resampleFilter = "lanczos"
   quality = 75
   anchor = "smart"
+  [imaging.exif]
+    disableDate = true
+    disableLatLong = true
+    includeFields = ""
+    excludeFields = ""
 
 # Static files
 [static]
   # Ensure static files are copied to the output directory
   copy = true
+
+# Media types
+[mediaTypes]
+  [mediaTypes."image/webp"]
+    suffixes = ["webp"]
+  [mediaTypes."image/jpeg"]
+    suffixes = ["jpg", "jpeg"]
+  [mediaTypes."image/png"]
+    suffixes = ["png"]
+
+# Output formats
+[outputFormats]
+  [outputFormats.WebP]
+    mediaType = "image/webp"
+    isImage = true
+    isHTML = false
+    isText = false
+    notAlternative = true
