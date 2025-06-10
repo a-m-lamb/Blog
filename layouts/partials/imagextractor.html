@@ -25,22 +25,53 @@
 {{ end }}
 
 {{ if eq $image "" }}
-<!-- Local image eg: ./abc.jpeg or /abc.png -->
-{{ $regex := `img[\s]+alt="([^"]+)"[\s]+src="([^"]+)"` }}
+<!-- Markdown image format: ![alt](url) -->
+{{ $regex := `!\[([^\]]+)\]\(([^)]+)\)` }}
 {{ $matches := findRESubmatch $regex $page.Content }}
 {{ with index $matches 0 }}
-  {{ $image = index . 2 | relURL }}
   {{ $alt = index . 1 | safeHTML }}
+  {{ $imgPath := index . 2 }}
+  {{ if hasPrefix $imgPath "/static/" }}
+    {{ $image = strings.TrimPrefix "/static" $imgPath | relURL }}
+  {{ else if hasPrefix $imgPath "/" }}
+    {{ $image = $imgPath | relURL }}
+  {{ else }}
+    {{ $image = $imgPath | relURL }}
+  {{ end }}
 {{ end }}
 {{ end }}
 
 {{ if eq $image "" }}
-<!-- Local image eg: ./abc.jpeg or /abc.png -->
+<!-- HTML image format: <img src="url" alt="alt" /> -->
+{{ $regex := `img[\s]+alt="([^"]+)"[\s]+src="([^"]+)"` }}
+{{ $matches := findRESubmatch $regex $page.Content }}
+{{ with index $matches 0 }}
+  {{ $alt = index . 1 | safeHTML }}
+  {{ $imgPath := index . 2 }}
+  {{ if hasPrefix $imgPath "/static/" }}
+    {{ $image = strings.TrimPrefix "/static" $imgPath | relURL }}
+  {{ else if hasPrefix $imgPath "/" }}
+    {{ $image = $imgPath | relURL }}
+  {{ else }}
+    {{ $image = $imgPath | relURL }}
+  {{ end }}
+{{ end }}
+{{ end }}
+
+{{ if eq $image "" }}
+<!-- HTML image format: <img src="url" alt="alt" /> (reversed attributes) -->
 {{ $regex := `img[\s]+src="([^"]+)"[\s]+alt="([^"]+)"` }}
 {{ $matches := findRESubmatch $regex $page.Content }}
 {{ with index $matches 0 }}
-  {{ $image = index . 1 | relURL }}
+  {{ $imgPath := index . 1 }}
   {{ $alt = index . 2 | safeHTML }}
+  {{ if hasPrefix $imgPath "/static/" }}
+    {{ $image = strings.TrimPrefix "/static" $imgPath | relURL }}
+  {{ else if hasPrefix $imgPath "/" }}
+    {{ $image = $imgPath | relURL }}
+  {{ else }}
+    {{ $image = $imgPath | relURL }}
+  {{ end }}
 {{ end }}
 {{ end }}
 
