@@ -33,7 +33,7 @@ It’s worth noting that many European settlers preferred to avoid the extremely
 Conversely, in the Anglo-Protestant South, conjure practices tended to be more subdued, blending practicality with Christian theology. This adaptation was not entirely unfamiliar to many enslaved Africans, as some came from Muslim traditions that were already monotheistic, while others, like those from the Kongo, had been exposed to Christianity as early as the late 1400s. For them, integrating folk traditions within a Protestant framework may have been a more natural process than is sometimes assumed.
 
 ![Conjure Image](/BookReview/ConjureInAfricanAmericanSociety/FeaturedImage.jpg)
-![Conjure Image]({{ "BookReview/ConjureInAfricanAmericanSociety/FeaturedImage.jpg" | absURL }})
+
 
 Unlike Voodoo and Santería, which were organized religions with defined rituals and deities, conjure operated differently. It lacked a formal pantheon, sacred dances, or specific animal veneration outside of secretive practices. Instead, it centered on magic, divination, and unstructured folk beliefs—qualities that made it harder to suppress or regulate.
 
