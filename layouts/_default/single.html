@@ -15,11 +15,14 @@
             &nbsp;&nbsp;|&nbsp;&nbsp;{{ .ReadingTime }} minute read
         </time>
 
-        <div
-            class="mt-1 lg:pb-10 px-2 text-2xl leading-10 font-thin text-gray-500 overflow-hidden break-words article-body">
-            {{
-            .Content |
-            safeHTML }}
+        <div class="mt-1 lg:pb-10 px-2 text-2xl leading-10 font-thin text-gray-500 overflow-hidden break-words article-body">
+            {{ $content := .Content }}
+            {{ $content := replace $content "](/BookReview/" (printf "](%sBookReview/" .Site.BaseURL) }}
+            {{ $content := replace $content "](/image/" (printf "](%simage/" .Site.BaseURL) }}
+            {{ $content := replace $content "](/img/" (printf "](%simg/" .Site.BaseURL) }}
+            {{ $content := replace $content "](/static/" (printf "](%sstatic/" .Site.BaseURL) }}
+            {{ $content := replace $content "](example/" (printf "](%sBookReview/ConjureInAfricanAmericanSociety/" .Site.BaseURL) }}
+            {{ $content | safeHTML }}
         </div>
     </div>
     <div class="text-gray-500 text-lg">
