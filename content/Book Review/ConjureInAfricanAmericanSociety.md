@@ -9,7 +9,6 @@ draft = false
 
 +++
 
-![Conjure Image](example/FeaturedImage.jpg)
 
 I recently read [Conjure in African American Society](https://amzn.to/4dFkGIb "Conjure in African American Society") by Jeffrey E. Anderson, a book that feels particularly timely given ongoing cultural discussions. The work traces the history of conjure in the United States—examining its origins, regional variations, cultural influences, and enduring legacy, while also considering its relevance today.
 
@@ -34,7 +33,7 @@ It’s worth noting that many European settlers preferred to avoid the extremely
 Conversely, in the Anglo-Protestant South, conjure practices tended to be more subdued, blending practicality with Christian theology. This adaptation was not entirely unfamiliar to many enslaved Africans, as some came from Muslim traditions that were already monotheistic, while others, like those from the Kongo, had been exposed to Christianity as early as the late 1400s. For them, integrating folk traditions within a Protestant framework may have been a more natural process than is sometimes assumed.
 
 ![Conjure Image](/BookReview/ConjureInAfricanAmericanSociety/FeaturedImage.jpg)
-
+![Conjure Image]({{ "BookReview/ConjureInAfricanAmericanSociety/FeaturedImage.jpg" | absURL }})
 
 Unlike Voodoo and Santería, which were organized religions with defined rituals and deities, conjure operated differently. It lacked a formal pantheon, sacred dances, or specific animal veneration outside of secretive practices. Instead, it centered on magic, divination, and unstructured folk beliefs—qualities that made it harder to suppress or regulate.
 
