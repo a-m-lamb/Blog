@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
     dir="{{ or site.Language.LanguageDirection `ltr` }}">
-{{- partial "head.html" . -}}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    {{ if .Site.Params.googleAnalytics }}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ .Site.Params.googleAnalytics }}');
+    </script>
+    {{ end }}
+    {{ partial "head.html" . }}
+</head>
 
 <body>
     <div class="

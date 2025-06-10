@@ -1,9 +1,6 @@
 {{ define "main" }}
 
 <article class="post-single">
-    <!--
-<img src="/img/lemon.webp" alt="" class="w-full h-96 object-cover rounded-lg">
--->
     <header class="post-header">
         <h1 class="post-title">{{ .Title }}</h1>
         {{ if .Params.description }}
@@ -27,16 +24,11 @@
 
     <div class="post-content">
         {{ $content := .Content }}
-        {{ $base := .Site.BaseURL }}
-        {{/* Normalize all /static/ paths */}}
-        {{ $content = replace $content "src=\"/static/" (printf "src=\"%s" $base) }}
-
         {{ $content := replace $content "src=\"/static/" (printf "src=\"%s" .Site.BaseURL) }}
         {{ $content := replace $content "src=\"example/" (printf "src=\"%sstatic/example/" .Site.BaseURL) }}
-
-        {{ $content = replace $content "src=\"/static/BookReview/" (printf "src=\"%sBookReview/" $base) }}
-
-
+        {{ $content := replace $content "src=\"/example/" (printf "src=\"%sstatic/example/" .Site.BaseURL) }}
+        {{ $content := replace $content "src=\"/BookReview/" (printf "src=\"%sstatic/BookReview/" .Site.BaseURL) }}
+        {{ $content := replace $content "src=\"BookReview/" (printf "src=\"%sstatic/BookReview/" .Site.BaseURL) }}
         {{ $content | safeHTML }}
     </div>
 
