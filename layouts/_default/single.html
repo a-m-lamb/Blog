@@ -27,11 +27,16 @@
 
     <div class="post-content">
         {{ $content := .Content }}
+        {{ $base := .Site.BaseURL }}
+        {{/* Normalize all /static/ paths */}}
+        {{ $content = replace $content "src=\"/static/" (printf "src=\"%s" $base) }}
+
         {{ $content := replace $content "src=\"/static/" (printf "src=\"%s" .Site.BaseURL) }}
         {{ $content := replace $content "src=\"example/" (printf "src=\"%sstatic/example/" .Site.BaseURL) }}
-        {{ $content := replace $content "src=\"/example/" (printf "src=\"%sstatic/example/" .Site.BaseURL) }}
-        {{ $content := replace $content "src=\"/BookReview/" (printf "src=\"%sstatic/BookReview/" .Site.BaseURL) }}
-        {{ $content := replace $content "src=\"BookReview/" (printf "src=\"%sstatic/BookReview/" .Site.BaseURL) }}
+
+        {{ $content = replace $content "src=\"/static/BookReview/" (printf "src=\"%sBookReview/" $base) }}
+
+
         {{ $content | safeHTML }}
     </div>
 
